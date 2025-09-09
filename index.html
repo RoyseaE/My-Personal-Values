@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Personal Values</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Personal Values</h1>
+    <nav>
+      <a href="values.html">Explore My Values</a>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Why Values Matter</h2>
+      <p>
+        Personal values are the guiding principles that shape our decisions, relationships, and sense of purpose. They help us stay true to ourselves and live with integrity.
+      </p>
+    </section>
+    <section>
+      <h2>What You'll Find</h2>
+      <ul>
+        <li>Core beliefs that define me</li>
+        <li>Examples of how I live my values</li>
+        <li>Reflections on growth and change</li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Royce's Reflections</p>
+  </footer>
+  <script>
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.body.classList.add('fade-out');
+        setTimeout(() => {
+          window.location = this.href;
+        }, 500); // Match fadeOut duration
+      });
+    });
+  </script>
+</body>
+</html>

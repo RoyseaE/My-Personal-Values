@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Core Values</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>My Core Values</h1>
+    <nav>
+      <a href="index.html">Back to Home</a>
+    </nav>
+  </header>
+  <main>
+    <section class="value">
+      <h2>Authenticity</h2>
+      <p>I strive to be genuine in all my interactions, embracing who I am without pretense.</p>
+    </section>
+    <section class="value">
+      <h2>Compassion</h2>
+      <p>Empathy and kindness guide how I treat others, especially in times of struggle.</p>
+    </section>
+    <section class="value">
+      <h2>Growth</h2>
+      <p>I believe in lifelong learning and evolving through challenges and reflection.</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Royce's Reflections</p>
+  </footer>
+  <script>
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.body.classList.add('fade-out');
+        setTimeout(() => {
+          window.location = this.href;
+        }, 500); // Match fadeOut duration
+      });
+    });
+  </script>
+</body>
+</html>
